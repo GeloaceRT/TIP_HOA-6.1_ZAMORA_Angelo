@@ -23,6 +23,7 @@
     service:
       name: httpd
       state: started
+      enabled: true
     when: ansible_distribution == "CentOS"
 
 - hosts: web_servers
